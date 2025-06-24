@@ -154,6 +154,7 @@ class TournamentTeamView(BaseListView):
         return super().list(self,request,*args,**kwargs)
 
 class MatchWinnerView(BaseListView):
+
     url_path = '/winners/'
     view_name = 'matchwinners'
     serializer_class = MatchWinnerSerializer
